@@ -9,7 +9,7 @@ A Docker-based stock analysis app that downloads price history and calculates ba
 To get started, clone the repository by running the following command in your terminal:
 
 ```
-git clone https://github.com/your-username/stock-analysis-app.git
+git clone https://github.com/andrewhume1/stock-analysis-app.git
 ```
 
 ### Build the Docker Image
