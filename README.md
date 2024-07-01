@@ -27,7 +27,7 @@ This will create a Docker image with the tag `stock_analysis_app`.
 To run the Docker container, use the following command:
 
 ```
-docker run -p 8080:80 stock-analysis-app
+docker run -p 5000:5000 stock-analysis-app
 ```
 This will start a new container from the `stock-analysis-app` image and map port 8080 on your local machine to port 80 in the container. You can access the app by visiting `http://localhost:8080` in your web browser.
 
