@@ -1,0 +1,28 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Stock Statistics</h1>
+    <form action="" method="post">
+        <label for="ticker">Enter Stock Ticker:</label>
+        <input type="text" id="ticker" name="ticker" required>
+        <button type="submit">Get Stock Info</button>
+    </form>
+    <div class="stock-info">
+        <p>Stock Price: {{ stock_price }} <span id="stock-price"></span></p>
+        <p>Stock Volume: {{ latest_volume }}</p>
+        <p>Price Date: {{ latest_price_date }}<span id="latest_price"></span></p>
+        <p>7 Day Volatility: {{ volatility_7d }} Status: {{ status_7d }}</p>
+        <p>14 Day Volatility: {{ volatility_14d }} Status: {{ status_14d }}</p>
+        <p>21 Day Volatility: {{ volatility_21d }} Status: {{ status_21d }}</p>
+        <p>52 Week Max: {{ max_52w }}. Date: {{ max_52w_date }}</p>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
